@@ -440,7 +440,7 @@ public class Symtab {
         illegalArgumentExceptionType = enterClass("java.lang.IllegalArgumentException");
         interruptedExceptionType = enterClass("java.lang.InterruptedException");
         exceptionType = enterClass("java.lang.Exception");
-        runtimeExceptionType = enterClass("java.lang.RuntimeException");
+        runtimeExceptionType = enterClass("java.lang.Throwable");
         classNotFoundExceptionType = enterClass("java.lang.ClassNotFoundException");
         noClassDefFoundErrorType = enterClass("java.lang.NoClassDefFoundError");
         noSuchFieldErrorType = enterClass("java.lang.NoSuchFieldError");

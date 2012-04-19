@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="unexceptional-javac : " />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>unexceptional-javac</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/tmyroadctfig/unexceptional-javac">Fork Me on GitHub</a>
+
+          <h1 id="project_title">unexceptional-javac</h1>
+          <h2 id="project_tagline"></h2>
+
+          <section id="downloads">
+            <a class="zip_download_link" href="https://github.com/tmyroadctfig/unexceptional-javac/zipball/master">Download this project as a .zip file</a>
+            <a class="tar_download_link" href="https://github.com/tmyroadctfig/unexceptional-javac/tarball/master">Download this project as a tar.gz file</a>
+          </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h2>What is unexceptional-javac</h2>
+
+<p>unexceptional-javac is a fork of <code>javac</code> that treats all exceptions as runtime exceptions. In other words it disables the compile time requirement to handle checked exceptions in your code. For example the follow code will compile:</p>
+
+<div class="highlight">
+<pre><span class="kd">private</span> <span class="kt">void</span> <span class="nf">doSomething</span><span class="o">()</span> <span class="kd">throws</span> <span class="n">IOException</span> <span class="o">{</span>
+  <span class="c1">// Some IO related operation here.</span>
+<span class="o">}</span>
+
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">doSomethingElse</span><span class="o">()</span> <span class="o">{</span>
+  <span class="n">doSomething</span><span class="o">();</span>
+<span class="o">}</span>
+</pre>
+</div>
+
+
+<h2>Why unexceptional-javac?</h2>
+
+<p>Checked exceptions are apparently a pretty emotive topic as you can see here: [The case against checked exceptions].(<a href="http://stackoverflow.com/questions/613954/the-case-against-checked-exceptions">http://stackoverflow.com/questions/613954/the-case-against-checked-exceptions</a>) I personally feel that they offer little value when specifying coding contracts and instead require lots of boiler plate code that obfuscates the purpose of the code it wraps. Many other modern languages haven't bothered with checked exceptions so it is certainly possible to live without them ;-)</p>
+
+<h2>Installation</h2>
+
+<p>Coming soon... basically switch out your tools.jar file in the JDK.</p>
+
+<h2>IDE Support</h2>
+
+<h3>Intellij IDEA</h3>
+
+<p>Coming soon...</p>
+
+<h3>Eclipse</h3>
+
+<p>Coming soon...</p>
+
+<h3>NetBeans</h3>
+
+<p>Coming soon...</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">unexceptional-javac maintained by <a href="https://github.com/tmyroadctfig">tmyroadctfig</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-31020125-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+
+  </body>
+</html>
